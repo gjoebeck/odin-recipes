@@ -2,26 +2,33 @@
     text-align: center;
 }
 
-.title {
-    color: crimson;
-    padding: 15px;
-    font-size: 75px;
+body {
+    background-image: url(../background-recording-recipes-large-salt-spoon-spices-red-pepper-black-blurred-image-171821463.jpg);
+    background-repeat: no-repeat
 }
 
 ol {
     counter-reset: item;
     margin-left: 0;
     padding-left: 0;
-  }
-  li {
+}
+
+li {
     display: block;
     margin-bottom: .5em;
     margin-left: 2em;
-  }
-  li::before {
+}
+
+li::before {
     display: inline-block;
     content: counter(item) ") ";
     counter-increment: item;
     width: 2em;
     margin-left: -2em;
-  }
+}
+
+.title {
+    color: crimson;
+    padding: 15px;
+    font-size: 75px;
+}
